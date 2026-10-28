@@ -1,0 +1,11 @@
+[project]
+name = "semantic-search-ai4"
+version = "0.1.0"
+description = "Семантический поиск с Gemini Embeddings и защитой API-запросов"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.0.0",
+    "numpy>=1.26",
+    "python-dotenv>=1.0",
+    "tenacity>=8.2",
+]
