@@ -1,0 +1,11 @@
+[
+  {"id": "01_still_life", "theme": "Натюрморт, простой запрос", "seed": 107,
+   "base": "A red apple on a table",
+   "improved": "Studio photograph of a single red apple on a dark wooden table, soft window lighting from the left, close-up, simple background, sharp focus"},
+  {"id": "02_landscape", "theme": "Пейзаж, запрос средней сложности", "seed": 207,
+   "base": "A mountain lake with a cabin",
+   "improved": "Watercolor painting of a small wooden cabin beside a calm alpine lake, snow-capped mountains in the background, warm sunrise, reflections in the water, wide landscape composition"},
+  {"id": "03_fantasy", "theme": "Фантастическая сцена, сложный запрос", "seed": 307,
+   "base": "A robot gardener in a greenhouse on Mars",
+   "improved": "Digital illustration of a friendly small robot tending green plants inside a glass greenhouse on Mars, red desert visible outside, warm interior light, wide-angle view, detailed science fiction concept art"}
+]

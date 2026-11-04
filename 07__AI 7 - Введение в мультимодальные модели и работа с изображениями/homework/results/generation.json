@@ -1,0 +1,128 @@
+[
+  {
+    "id": "01_still_life",
+    "variant": "base",
+    "prompt": "A red apple on a table",
+    "negative_prompt": "",
+    "seed": 107,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 39.47,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/01_still_life_base.png"
+  },
+  {
+    "id": "01_still_life",
+    "variant": "improved",
+    "prompt": "Studio photograph of a single red apple on a dark wooden table, soft window lighting from the left, close-up, simple background, sharp focus",
+    "negative_prompt": "blurry, low quality, text, watermark",
+    "seed": 107,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 27.75,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/01_still_life_improved.png"
+  },
+  {
+    "id": "02_landscape",
+    "variant": "base",
+    "prompt": "A mountain lake with a cabin",
+    "negative_prompt": "",
+    "seed": 207,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 33.48,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/02_landscape_base.png"
+  },
+  {
+    "id": "02_landscape",
+    "variant": "improved",
+    "prompt": "Watercolor painting of a small wooden cabin beside a calm alpine lake, snow-capped mountains in the background, warm sunrise, reflections in the water, wide landscape composition",
+    "negative_prompt": "blurry, low quality, text, watermark",
+    "seed": 207,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 21.99,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/02_landscape_improved.png"
+  },
+  {
+    "id": "03_fantasy",
+    "variant": "base",
+    "prompt": "A robot gardener in a greenhouse on Mars",
+    "negative_prompt": "",
+    "seed": 307,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 21.68,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/03_fantasy_base.png"
+  },
+  {
+    "id": "03_fantasy",
+    "variant": "improved",
+    "prompt": "Digital illustration of a friendly small robot tending green plants inside a glass greenhouse on Mars, red desert visible outside, warm interior light, wide-angle view, detailed science fiction concept art",
+    "negative_prompt": "blurry, low quality, text, watermark",
+    "seed": 307,
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "scheduler": "PNDMScheduler",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "width": 512,
+    "height": 512,
+    "device": "mps",
+    "dtype": "float32",
+    "seconds": 26.53,
+    "nsfw_detected": [
+      false
+    ],
+    "image": "images/03_fantasy_improved.png"
+  }
+]
