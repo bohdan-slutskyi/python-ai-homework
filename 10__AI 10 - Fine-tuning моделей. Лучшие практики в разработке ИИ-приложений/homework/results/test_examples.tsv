@@ -1,0 +1,13 @@
+review	true_label	predicted_label	correct
+The volume for the ringer is REAL good (you have choices how loud).	positive	positive	1
+Echo Problem....Very unsatisfactory	negative	negative	1
+My phone sounded OK ( not great - OK), but my wife's phone was almost totally unintelligible, she couldn't understand a word being said on it.	negative	negative	1
+I highly recommend these and encourage people to give them a try.	positive	positive	1
+I would highly recommend this product.	positive	positive	1
+Improper description.... I had to return it.	negative	negative	1
+Plug was the wrong size.	negative	negative	1
+The bose noise cancelling is amazing, which is very important for a NYC commuter.	positive	positive	1
+Everything worked on the first try.The device was certainly engineered in a clever way and the construction feels good.	positive	positive	1
+Very unreliable service from T-mobile !	negative	negative	1
+Better than you'd expect.	positive	positive	1
+Also makes it easier to hold on to.	positive	negative	0

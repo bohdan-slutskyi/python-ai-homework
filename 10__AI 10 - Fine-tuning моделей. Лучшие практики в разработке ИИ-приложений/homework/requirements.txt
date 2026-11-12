@@ -1,0 +1,6 @@
+# Tested with Python 3.10 on Apple Silicon (Mac M1)
+torch==2.2.2
+transformers==4.41.2
+accelerate==0.30.1
+numpy==1.26.4
+safetensors==0.4.3

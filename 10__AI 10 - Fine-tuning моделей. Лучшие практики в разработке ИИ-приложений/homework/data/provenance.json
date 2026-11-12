@@ -1,0 +1,23 @@
+{
+  "source": "UCI Machine Learning Repository — Sentiment Labelled Sentences",
+  "url": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+  "subset": "sentiment labelled sentences/amazon_cells_labelled.txt",
+  "publication": "Kotzias et al. (2015), From Group to Individual Labels using Deep Features, KDD",
+  "archive_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
+  "clean_tsv_sha256": "88e4efea1b4ad1226087bc3547cc4eecaaf3423eb78971d67d1fed8137c2e217",
+  "raw_rows": 1000,
+  "clean_rows": 987,
+  "removed_duplicates": 13,
+  "conflicting_duplicates": 0,
+  "label_counts": {
+    "negative": 496,
+    "positive": 491
+  },
+  "cleaning": [
+    "HTML character unescape",
+    "Unicode NFKC",
+    "strip HTML tags",
+    "normalize whitespace",
+    "case-insensitive deduplication"
+  ]
+}

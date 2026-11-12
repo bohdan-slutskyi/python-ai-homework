@@ -1,0 +1,268 @@
+{
+  "task": "binary sentiment classification of real Amazon product review sentences",
+  "source": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+  "source_subset": "sentiment labelled sentences/amazon_cells_labelled.txt",
+  "data_sha256": "88e4efea1b4ad1226087bc3547cc4eecaaf3423eb78971d67d1fed8137c2e217",
+  "model": "prajjwal1/bert-tiny",
+  "device": "mps",
+  "seed": 42,
+  "train_config": {
+    "epochs": 9,
+    "learning_rate": 0.0001,
+    "batch_size": 16,
+    "max_tokens": 96,
+    "select_best_epoch_by": "validation_f1_positive"
+  },
+  "counts": {
+    "raw": 1000,
+    "after_cleaning": 987,
+    "removed_duplicates": 13,
+    "train": {
+      "rows": 690,
+      "negative": 347,
+      "positive": 343
+    },
+    "validation": {
+      "rows": 147,
+      "negative": 74,
+      "positive": 73
+    },
+    "test": {
+      "rows": 150,
+      "negative": 75,
+      "positive": 75
+    }
+  },
+  "baseline_validation": {
+    "accuracy": 0.5578,
+    "precision_positive": 0.6818,
+    "recall_positive": 0.2055,
+    "f1_positive": 0.3158,
+    "confusion_matrix": {
+      "TN": 67,
+      "FP": 7,
+      "FN": 58,
+      "TP": 15
+    }
+  },
+  "fine_tuned_validation": {
+    "accuracy": 0.8707,
+    "precision_positive": 0.8553,
+    "recall_positive": 0.8904,
+    "f1_positive": 0.8725,
+    "confusion_matrix": {
+      "TN": 63,
+      "FP": 11,
+      "FN": 8,
+      "TP": 65
+    }
+  },
+  "fine_tuned_test": {
+    "accuracy": 0.8333,
+    "precision_positive": 0.8378,
+    "recall_positive": 0.8267,
+    "f1_positive": 0.8322,
+    "confusion_matrix": {
+      "TN": 63,
+      "FP": 12,
+      "FN": 13,
+      "TP": 62
+    }
+  },
+  "training": {
+    "train_runtime": 29.1498,
+    "train_samples_per_second": 213.037,
+    "train_steps_per_second": 13.585,
+    "train_loss": 0.40240173869662815,
+    "epoch": 9.0
+  },
+  "trainer_log": [
+    {
+      "loss": 0.6755,
+      "grad_norm": 6.3657684326171875,
+      "learning_rate": 8.888888888888889e-05,
+      "epoch": 1.0,
+      "step": 44
+    },
+    {
+      "eval_loss": 0.6581559181213379,
+      "eval_accuracy": 0.619,
+      "eval_precision_positive": 0.6,
+      "eval_recall_positive": 0.6986,
+      "eval_f1_positive": 0.6456,
+      "eval_runtime": 0.0662,
+      "eval_samples_per_second": 2220.503,
+      "eval_steps_per_second": 75.527,
+      "epoch": 1.0,
+      "step": 44
+    },
+    {
+      "loss": 0.6369,
+      "grad_norm": 12.145520210266113,
+      "learning_rate": 7.777777777777778e-05,
+      "epoch": 2.0,
+      "step": 88
+    },
+    {
+      "eval_loss": 0.5832796692848206,
+      "eval_accuracy": 0.7551,
+      "eval_precision_positive": 0.7342,
+      "eval_recall_positive": 0.7945,
+      "eval_f1_positive": 0.7632,
+      "eval_runtime": 0.0651,
+      "eval_samples_per_second": 2257.553,
+      "eval_steps_per_second": 76.788,
+      "epoch": 2.0,
+      "step": 88
+    },
+    {
+      "loss": 0.5225,
+      "grad_norm": 5.078207492828369,
+      "learning_rate": 6.666666666666667e-05,
+      "epoch": 3.0,
+      "step": 132
+    },
+    {
+      "eval_loss": 0.4648444354534149,
+      "eval_accuracy": 0.7959,
+      "eval_precision_positive": 0.8209,
+      "eval_recall_positive": 0.7534,
+      "eval_f1_positive": 0.7857,
+      "eval_runtime": 0.0618,
+      "eval_samples_per_second": 2379.412,
+      "eval_steps_per_second": 80.932,
+      "epoch": 3.0,
+      "step": 132
+    },
+    {
+      "loss": 0.3944,
+      "grad_norm": 2.6615898609161377,
+      "learning_rate": 5.555555555555556e-05,
+      "epoch": 4.0,
+      "step": 176
+    },
+    {
+      "eval_loss": 0.43440335988998413,
+      "eval_accuracy": 0.8027,
+      "eval_precision_positive": 0.7558,
+      "eval_recall_positive": 0.8904,
+      "eval_f1_positive": 0.8176,
+      "eval_runtime": 0.0635,
+      "eval_samples_per_second": 2315.955,
+      "eval_steps_per_second": 78.774,
+      "epoch": 4.0,
+      "step": 176
+    },
+    {
+      "loss": 0.3434,
+      "grad_norm": 3.918325424194336,
+      "learning_rate": 4.4444444444444447e-05,
+      "epoch": 5.0,
+      "step": 220
+    },
+    {
+      "eval_loss": 0.36614668369293213,
+      "eval_accuracy": 0.8571,
+      "eval_precision_positive": 0.8514,
+      "eval_recall_positive": 0.863,
+      "eval_f1_positive": 0.8571,
+      "eval_runtime": 0.0954,
+      "eval_samples_per_second": 1541.087,
+      "eval_steps_per_second": 52.418,
+      "epoch": 5.0,
+      "step": 220
+    },
+    {
+      "loss": 0.2835,
+      "grad_norm": 5.814894199371338,
+      "learning_rate": 3.3333333333333335e-05,
+      "epoch": 6.0,
+      "step": 264
+    },
+    {
+      "eval_loss": 0.35733360052108765,
+      "eval_accuracy": 0.8503,
+      "eval_precision_positive": 0.8493,
+      "eval_recall_positive": 0.8493,
+      "eval_f1_positive": 0.8493,
+      "eval_runtime": 0.0621,
+      "eval_samples_per_second": 2366.725,
+      "eval_steps_per_second": 80.501,
+      "epoch": 6.0,
+      "step": 264
+    },
+    {
+      "loss": 0.274,
+      "grad_norm": 7.637710094451904,
+      "learning_rate": 2.2222222222222223e-05,
+      "epoch": 7.0,
+      "step": 308
+    },
+    {
+      "eval_loss": 0.3588118851184845,
+      "eval_accuracy": 0.8639,
+      "eval_precision_positive": 0.8533,
+      "eval_recall_positive": 0.8767,
+      "eval_f1_positive": 0.8649,
+      "eval_runtime": 0.0631,
+      "eval_samples_per_second": 2330.38,
+      "eval_steps_per_second": 79.265,
+      "epoch": 7.0,
+      "step": 308
+    },
+    {
+      "loss": 0.247,
+      "grad_norm": 2.371267795562744,
+      "learning_rate": 1.1111111111111112e-05,
+      "epoch": 8.0,
+      "step": 352
+    },
+    {
+      "eval_loss": 0.3523026406764984,
+      "eval_accuracy": 0.8707,
+      "eval_precision_positive": 0.8553,
+      "eval_recall_positive": 0.8904,
+      "eval_f1_positive": 0.8725,
+      "eval_runtime": 0.0969,
+      "eval_samples_per_second": 1516.685,
+      "eval_steps_per_second": 51.588,
+      "epoch": 8.0,
+      "step": 352
+    },
+    {
+      "loss": 0.2445,
+      "grad_norm": 1.3950815200805664,
+      "learning_rate": 0.0,
+      "epoch": 9.0,
+      "step": 396
+    },
+    {
+      "eval_loss": 0.3519585430622101,
+      "eval_accuracy": 0.8639,
+      "eval_precision_positive": 0.8533,
+      "eval_recall_positive": 0.8767,
+      "eval_f1_positive": 0.8649,
+      "eval_runtime": 0.0797,
+      "eval_samples_per_second": 1845.134,
+      "eval_steps_per_second": 62.76,
+      "epoch": 9.0,
+      "step": 396
+    },
+    {
+      "train_runtime": 29.1498,
+      "train_samples_per_second": 213.037,
+      "train_steps_per_second": 13.585,
+      "total_flos": 495698384880.0,
+      "train_loss": 0.40240173869662815,
+      "epoch": 9.0,
+      "step": 396
+    }
+  ],
+  "versions": {
+    "python": "3.10.22",
+    "torch": "2.2.2",
+    "transformers": "4.41.2"
+  },
+  "caution": "Exploratory educational experiment: test set was evaluated in a previous three-epoch trial too. It was not used for gradient updates or checkpoint selection, but iteration after inspecting that trial can introduce optimistic selection bias.",
+  "selected_epoch": 8.0
+}
